@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/*-------------- font size -------------------------*/
+
+.fz-18 {
+    font-size: 18px;
+}
+
+/*---end padding----*/
+
+.clear {
+    clear: both;
+}
+
+.clear.height10 {
+    height: 10px;
+}
+
+.clear.height20 {
+    height: 20px;
+}
+
+.clear.height30 {
+    height: 30px;
+}
+
+.clear.height50 {
+    height: 50px;
+}
+
+.clear.border1 {
+    border-top: 1px solid #dedede;
+    margin: 15px 0px;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+.clearfix {
+    display: block;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif !important;
+    margin: 0px;
+    padding: 0px !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+#content{
+    padding-top: 2%;
+    background: linear-gradient(135deg, #35bce4 0%, #2a7cfe 30%, #ffa422 100%);
+    /* background: -moz-linear-gradient(-45deg, #0b62b3 0%, #7dff5f 100%);
+  background: -webkit-linear-gradient(-45deg, #0b62b3 0%, #7dff5f 100%); */
+    /* background: linear-gradient(135deg, #0b62b3 0%, #7dff5f 100%); */
+    /* background: linear-gradient(135deg, #ffb20f 0%, #7dff5f 100%); */
+    /* background: linear-gradient(135deg, #e30000 0%, #e1cbcb 100%); */
+}
+
+.box-content{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 10px 20px;
+    font-weight: 700;
+    height: 30px;
+    width: 100%;
+    font-size: medium;
+    /**border-radius: 10px;**/
+    border-radius: max(0px, min(8px, calc((100vw - 4px - 100%)
+    * 9999)));
+}
+
+#status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 284px;
+    position: fixed;
+    left:45%;
+    top: 50%;
+    background-image: url(https://cdn.dribbble.com/users/830587/screenshots/4381223/loader_gif.gif);
+    background-repeat: 10s;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    z-index: 1001
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 1000
+}
+
+.topbar {
+    display: block;
+    background: #ffffff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
+    letter-spacing: .03em;
+    padding-top: 15px;
+    transition: all .3s;
+}
+
+/* Thong bao Popup  */
+.tbpopup .tboverlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+    }
+     
+    .tbpopup .tbcontent {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:#fff;
+    max-width:500px;
+    z-index:2;
+    text-align:center;
+    padding:20px;
+    box-sizing:border-box;
+    font-family:"Open Sans",sans-serif;
+    border-radius:20px;
+    display: block;
+    position: fixed;
+    box-shadow:0px 0px 10px #111;
+    }
+    @media (max-width: 700px) {
+    .tbpopup .tbcontent {width:90%;}
+    }
+     
+    .tbpopup .tbclose-btn {
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:35px;
+    height:35px;
+    color:#ff4444;
+    font-size:30px;
+    font-weight:600;
+    line-height:35px;
+    text-align:center;
+    border-radius:50%;
+    }
+     
+    .tbpopup.active .tboverlay {
+    display:block;
+    }
+     
+    .tbpopup.active .tbcontent {
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+    }
+    .tbbuttom{background:#00cc00;color:#fff}
+
+
+body::-webkit-scrollbar-track{
+    background-color: #fafafa;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(-45deg, #6a5af9, #d66efd);
+    border-radius: 50px;
+}
+
+.footer_root{
+    background-color: #111316;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    bottom: auto;
+    height: auto;
+    width: 100%;
+    font-weight: 500;
+}

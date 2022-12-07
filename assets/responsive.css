@@ -1,0 +1,49 @@
+/* DESKTOP */
+@media only screen and (min-width: 1200px) {
+    .subtitle {
+        font-size: 21px;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    .title {
+        font-size: 7vw;
+    }
+    .subtitle {
+        font-size: 15px !important;
+    }
+    .live{
+        vertical-align: middle;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+/* SMARTPHONE */
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 4vw;
+        line-height: 15vw;
+    }
+    .subtitle {
+        font-size: 16px !important;
+        padding: 0;
+    }
+
+    .box-test{
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .container {
+        max-width: 1370px;
+    }
+}
+
